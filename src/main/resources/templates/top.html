@@ -1,0 +1,39 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}">
+
+<!-- JS読み込み -->
+<script th:src="@{/webjars/jquery/jquery.min.js}" defer></script>
+<script th:src="@{/webjars/bootstrap/js/bootstrap.min.js}" defer></script>
+
+<title>Hello, world!</title>
+</head>
+<body>
+	<div class="container">
+		<h1>Hello, world!</h1>
+		<table class="table">
+			<thead>
+				<tr>
+					<th scope="col">名前</th>
+					<th scope="col">個数</th>
+					<th scope="col">値段（円）</th>
+					
+				</tr>
+			</thead>
+			<tbody>
+				<tr th:each="fr:${fruits}">
+					<th th:text="${fr.name}"></th>
+					<td th:text="${fr.quantity}"></td>
+					<td th:text="${fr.price}"></td>
+					
+				</tr>
+				
+			</tbody>
+		</table>
+		
+	</div>
+</body>
+</html>
