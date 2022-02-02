@@ -7,6 +7,3 @@ spring:
     username: admin
     password: password
     driverClassName: com.mysql.cj.jdbc.Driver
-  sql:
-    init:
-      mode: always
