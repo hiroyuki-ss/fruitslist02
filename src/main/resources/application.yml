@@ -11,7 +11,3 @@ spring:
     password: password
     #username: root
     #password: 108474hi
-
-  sql:
-    init:
-      mode: always
