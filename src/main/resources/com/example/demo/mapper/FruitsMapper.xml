@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-  <mapper namespace="com.example.demo.mapper.FruitsMapper">
-  
-  <select id="selectAll" resultType="com.example.demo.entity.Fruits">
+<mapper namespace="com.example.demo.mapper.FruitsMapper">
+
+	<select id="selectAll" resultType="com.example.demo.entity.Fruits">
     select  *
     from    shoppingList
-    order by price 
+	order by price
   </select>
- </mapper>
+</mapper>

@@ -1,13 +1,13 @@
 package com.example.demo.entity;
 
 public class Fruits {
-	
+
 	public Fruits(String name, String quantity, String price) {
 		this.name = name;
 		this.quantity = quantity;
 		this.price = price;
 	}
-	
+
 	private String name;
 
 	public String getName() {

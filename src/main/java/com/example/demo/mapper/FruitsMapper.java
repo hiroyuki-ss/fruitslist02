@@ -8,6 +8,6 @@ import com.example.demo.entity.Fruits;
 
 @Mapper
 public interface FruitsMapper {
-	
+
 	public List<Fruits> selectAll();
 }

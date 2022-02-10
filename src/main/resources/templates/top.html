@@ -3,7 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}">
+<link rel="stylesheet"
+	th:href="@{/webjars/bootstrap/css/bootstrap.min.css}">
 
 <!-- JS読み込み -->
 <script th:src="@{/webjars/jquery/jquery.min.js}" defer></script>
@@ -20,7 +21,7 @@
 					<th scope="col">名前</th>
 					<th scope="col">個数</th>
 					<th scope="col">値段（円）</th>
-					
+
 				</tr>
 			</thead>
 			<tbody>
@@ -28,12 +29,12 @@
 					<th th:text="${fr.name}"></th>
 					<td th:text="${fr.quantity}"></td>
 					<td th:text="${fr.price}"></td>
-					
+
 				</tr>
-				
+
 			</tbody>
 		</table>
-		
+
 	</div>
 </body>
 </html>
