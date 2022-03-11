@@ -1,11 +1,11 @@
 spring:
   datasource:
     driverClassName: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:53306/testdb
-    username: develop
-    password: develop
-    #username: admin
-    #password: password
+    url: jdbc:mysql://db-hellospring.cfivmaqlrrxf.ap-northeast-1.rds.amazonaws.com:3306/testdb
+    #username: develop
+    #password: develop
+    username: admin
+    password: password
   sql:
     init:
       mode: always
